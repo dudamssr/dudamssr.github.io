@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #8BA8B7;
+}
+
+
+header{
+    background: #8BA8B7;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 0.5rem;
+}
+nav ul {
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color: #6182A6;
+    cursor: pointer;
+}
+
+
+section{
+    padding: 2rem;
+    margin: 1rem;
+    background: #6182A6;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.foto-perfil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #dcf0eb;
+    background: #cdeefb;
+}
+.sobre-informacoes h2{
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.sobre-informacoes p{
+    color: #fff;
+}
+
+
+.quadrados-moveis{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.quadrado{
+    background: #ABCDEF;
+    padding: 1rem;
+    flex: 1 1 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.quadrado:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.quadrado-imagem{
+    background: #aee1e1;
+    padding: 1rem;
+    flex: 1 1 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.quadrado-imagem:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.quadrado-imagem::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: #cdeefb;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 5px;
+}
